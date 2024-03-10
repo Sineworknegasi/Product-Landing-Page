@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Product Landing page</title>
+</head>
+
+<body>
+    <header id="header">
+        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+            alt="logo" id="header-img" />
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#Features">Features</a></li>
+                <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                <li><a class="nav-link" href="#Pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1>Handcrafted, home-made masterpieces</h1>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+
+            <input type="email" placeholder="Enter your email" name="email" id="email">
+            <input type="submit" value="Subscribe" id="submit" mailto="https://www.freecodecamp.com/email-submit">
+        </form>
+        <main id="main" class="container">
+            <section id="Features">
+                <div class="grid">
+                    <div class="disc">
+                        <i class="fa fa-3x fa-fire"></i>
+                        <div>
+                            <h2>Premium Materials</h2>
+                            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the
+                                longevity of your purchase.</p>
+                        </div>
+                    </div>
+                    <div class="disc">
+                        <i class="fa fa-3x fa-truck"></i>
+                        <div>
+                            <h2>Fast Shipping</h2>
+                            <p>We make sure you recieve your trombone as soon as we have finished making it. We also
+                                provide free returns if you are not satisfied.</p>
+                        </div>
+                    </div>
+                    <div class="disc">
+                        <i class="fa fa-3x fa-battery-full"></i>
+                        <div>
+                            <h2>Quality Assurance</h2>
+                            <p>For every purchase you make, we will ensure there are no damages or faults and we will
+                                check and test the pitch of your instrument.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="how-it-works">
+                <iframe id="video" width="800" height="500" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </section>
+            <section class="Pricing" id="Pricing">
+                <div class="products">
+                    <h2>Tenor trombone</h2>
+                    <h3>$600</h3>
+                    <p>Lorem ipsum.<br>
+                        Lorem ipsum.<br>
+                        Lorem ipsum dolor.<br>
+                        Lorem ipsum.</p>
+                        <button id="btn">SELECT</button>
+                </div>
+                <div class="products">
+                    <h2>BASS TROMBONE</h2>
+                    <h3>$900</h3>
+                    <p>Lorem ipsum.<br>
+                        Lorem ipsum.<br>
+                        Lorem ipsum dolor.<br>
+                        Lorem ipsum.</p>
+                        <button id="btn">SELECT</button>
+                </div>
+                <div class="products">
+                    <h2>Tenor trombone</h2>
+                    <h3>$1200</h3>
+                    <p>Plays similar to a Trumpet<br>
+                        Great for Jazz Bands<br>
+                        Lorem ipsum dolor.<br>
+                        Lorem ipsum.</p>
+                        <button id="btn">SELECT</button>
+                </div>
+            </section>
+        </main>
+        <footer class="footer container" id="Footer">
+            <div>
+                <ul>
+                    <li>term</li>
+                    <li>price</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+            <div>Copyright 2024, Original Trombones</div>
+        </footer>
+    </div>
+</body>
+
+</html>
