@@ -59,15 +59,39 @@ header nav ul {
     justify-content: space-between;
     gap: 8rem;
 }
-.nav-link {
+li {
     list-style: none;
 }
 
-.nav-link a {
+.nav-link {
     color: black;
     font-size: 1.4rem;
     text-decoration: none;
 }
+.nav-link::after{
+    content: "";
+    display: block;
+    background: red;;
+    width: 0%;
+    height: 2px;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    animation: animate 1s alternate-reverse;
+}
+@keyframes animate {
+    0% {
+        width: 0%;
+    }
+    50% {
+       width:  50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 #form {
     display: flex;
     flex-direction: row;
@@ -108,7 +132,7 @@ header nav ul {
 }
 .grid {
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
 }
 
@@ -117,7 +141,7 @@ header nav ul {
     grid-template-columns: 20% 80%;
     width: 500px;
     align-items: center;
-    height: auto;
+    height: 200px;
     border: 1px solid black;
     border-radius: 15px;
     padding: 30px;
